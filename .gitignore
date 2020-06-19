@@ -12,4 +12,4 @@ web-report/
 .env
 # macOS
 .DS_Store
-key
+key.js

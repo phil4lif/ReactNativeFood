@@ -1,3 +1,0 @@
-const API_KEY='ojhFYDIj61Mg8DISLdKPbc36R9os9LOisQ_mR4iyH4Ifh0oNpaLt6ir4_ouWi98HUAeDk9EaTe6c2MczLw2fmWV1eV4uftD6kuIB2_Yq7q3HZxf3tS1jFSzDJfDrXnYx'
-
-export default API_KEY;
