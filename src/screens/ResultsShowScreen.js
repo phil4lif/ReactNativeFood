@@ -17,22 +17,33 @@ const ResultsShowScreen = ({ navigation }) => {
         return null;
     }
     return (
-        <>
-            <Text>{result.name}</Text>
+        <View style={styles.containerStyle}>
+            <Text style={styles.textStyle}>{result.name}</Text>
             <FlatList 
             data={result.photos}
             keyExtractor={(photo) => photo}
             renderItem={({ item }) => {
                 return <Image style={styles.imageStyle} source={{ uri: item }} />
             }}/>
-        </>
+        </View>
     )
 };
 
 const styles = StyleSheet.create({
+    containerStyle: {
+        alignItems: 'center'
+    },
     imageStyle: {
         height: 200,
-        width: 300
+        width: 300,
+        marginLeft: 15,
+        marginBottom: 5,
+        borderRadius: 5
+    },
+    textStyle : {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginVertical: 10
     }
 });
 
